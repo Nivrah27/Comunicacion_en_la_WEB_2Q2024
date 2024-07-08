@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caminata en Nueva Zelanda</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="imagenes/NZlogo.png">
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/NZlogo.png" alt="Logo del evento" class="logo">
+    </header>
+
+    <section class="hero-banner">
+        <div class="video-overlay"></div>
+        <div class="content">
+            <h1>Caminata en Nueva Zelanda</h1>
+            <p class="hook">Vive una experiencia inolvidable en los paisajes más hermosos del mundo.</p>
+            <p class="description">Disfruta de la naturaleza, mejora tu salud y conoce gente nueva mientras exploras Nueva Zelanda. Una aventura invaluable que recordarás por siempre.</p>
+            <button class="btn-register" onclick="scrollToForm()">Registrarse</button>
+        </div>
+        <video autoplay loop muted playsinline class="hero-video" id="background-video">
+            <source src="videos/videoplayback.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </section>
+
+    <section class="benefits">
+        <div class="card">
+            <img src="imagenes/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg" alt="Paisaje de Nueva Zelanda" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">¿Qué incluye esta asombrosa experiencia?</h2>
+                <ul class="card-list">
+                    <li>✓ Guía experimentado <span class="old-price">$50 USD</span> <span class="new-price">Gratis</span></li>
+                    <li>✓ Mapa de los senderos y lugares a visitar <span class="old-price">$30 USD</span> <span class="new-price">Gratis</span></li>
+                    <li>✓ Transporte de lujo <span class="old-price">$100 USD</span> <span class="new-price">Gratis</span></li>
+                    <li>✓ Desayuno, almuerzo, merienda <span class="old-price">$40 USD</span> <span class="new-price">Gratis</span></li>
+                    <li>✓ Fotos <span class="old-price">$20 USD</span> <span class="new-price">Gratis</span></li>
+                    <li>✓ Videos con drone <span class="old-price">$70 USD</span> <span class="new-price">Gratis</span></li>
+                    <li>✓ Póliza de seguro <span class="old-price">$80 USD</span> <span class="new-price">Gratis</span></li>
+                </ul>
+                <p class="total-value">
+                    Valor total de la experiencia: <span class="old-price">$450 USD</span>
+                </p>
+                <p class="discounted-value">
+                    Regístrate hoy por solo: <span class="new-discount">$150 USD por persona</span>
+                </p>
+                <button class="btn-register" onclick="scrollToForm()">Registrarse</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="card-info">
+            <div class="columns-container">
+                <div class="left-column">
+                    <h2>Información del Evento</h2>
+                    <div class="info-detail">
+                        <h3>Fechas</h3>
+                        <p>15 de Octubre, 2024</p>
+                        <p>12 de Noviembre, 2024</p>
+                        <p>10 de Diciembre, 2024</p>
+                    </div>
+                    <div class="info-detail">
+                        <h3>Lugares a Visitar</h3>
+                        <ul>
+                            <li>✓ Parque Nacional Abel Tasman - 2 días - 25 km</li>
+                            <li>✓ Fiordos de Milford Sound - 3 días - 35 km</li>
+                            <li>✓ Montañas de Southern Alps - 4 días - 50 km</li>
+                        </ul>
+                    </div>
+                    <div class="info-detail">
+                        <h3>Recomendaciones de Vestimenta</h3>
+                        <ul>
+                            <li>✓ Ropa cómoda y ligera</li>
+                            <li>✓ Calzado adecuado para caminata</li>
+                            <li>✓ Protección solar</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="image-slider">
+                        <img src="imagenes/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg" alt="Paisaje 1">
+                        <img src="imagenes/omer-faruk-bekdemir-5BuxuWIJF1Q-unsplash.jpg" alt="Paisaje 2">
+                        <img src="imagenes/roell-de-ram-2DM7eOR5iyc-unsplash.jpg" alt="Paisaje 3">
+                        <img src="imagenes/casey-horner-O_wC7v1Jh8A-unsplash.jpg" alt="Paisaje 4">
+                    </div>
+                </div>
+            </div>
+            <div class="register-container">
+                <button class="btn-register" onclick="scrollToForm()">Registrarse</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Deja que nuestros clientes te cuenten la experiencia</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <img src="imagenes/test1.jpg" alt="Testimonial 1">
+                <p>"Una experiencia inolvidable, lo recomiendo totalmente! Los paisajes son espectaculares y el equipo de organización es muy profesional. Volveré el próximo año sin dudarlo."</p>
+                <p class="name">- Juan Pérez</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="imagenes/test2.jpg" alt="Testimonial 2">
+                <p>"Paisajes espectaculares y excelente organización. Me sentí segura y bien cuidada en todo momento. Fue una experiencia maravillosa que recomiendo a todos."</p>
+                <p class="name">- María García</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="imagenes/test3.jpg" alt="Testimonial 3">
+                <p>"Una aventura que repetiría sin dudar. Cada momento fue mágico y los guías fueron excepcionales. Definitivamente, una de las mejores experiencias de mi vida."</p>
+                <p class="name">- Luis Rodríguez</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="imagenes/test5.jpg" alt="Testimonial 4">
+                <p>"La mejor caminata de mi vida. Los lugares que visitamos eran impresionantes y la compañía fue fantástica. No puedo esperar a volver."</p>
+                <p class="name">- Ana López</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="imagenes/test6.jpg" alt="Testimonial 5">
+                <p>"Increíble, me encantó cada momento. La atención al detalle y el cuidado del equipo fueron excepcionales. Sin duda, una experiencia para recordar."</p>
+                <p class="name">- Carlos Sánchez</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <img src="imagenes/test7.jpg" alt="Testimonial 6">
+                <p>"Una experiencia maravillosa, muy recomendable. Los paisajes, la organización y la compañía hicieron de esta caminata algo inolvidable."</p>
+                <p class="name">- Laura Martínez</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+        <button class="btn-register" onclick="scrollToForm()">Registrarse</button>
+    </section>
+
+    <section class="registration-form" id="registration-form">
+        <h2>Formulario de Registro</h2>
+        <div class="form-container">
+            <div class="form-image">
+                <img src="imagenes/sebastien-goldberg-oXgPDa0OtAk-unsplash.jpg" alt="Imagen de la experiencia">
+            </div>
+            <div class="form-content">
+                <form id="form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+                    
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su apellido">
+                    
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Ingrese su correo">
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su teléfono">
+                    
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <input type="text" id="nacionalidad" name="nacionalidad" required placeholder="Ingrese su nacionalidad">
+                    
+                    <label for="residencia">País de residencia:</label>
+                    <input type="text" id="residencia" name="residencia" required placeholder="Ingrese su país de residencia">
+                    
+                    <label for="fecha">Fecha de la experiencia:</label>
+                    <select id="fecha" name="fecha" required>
+                        <option value="">Seleccione una fecha</option>
+                        <option value="15 Octubre 2024">15 de Octubre, 2024</option>
+                        <option value="12 Noviembre 2024">12 de Noviembre, 2024</option>
+                        <option value="10 Diciembre 2024">10 de Diciembre, 2024</option>
+                    </select>
+                    
+                    <label for="espacios">Cantidad de espacios:</label>
+                    <select id="espacios" name="espacios" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>© 2024 Harvin Carrillo Angulo. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="js/index.js"></script>
+</body>
+</html>

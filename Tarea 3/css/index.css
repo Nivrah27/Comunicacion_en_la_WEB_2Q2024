@@ -1,0 +1,628 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    max-width: 150px;
+    height: 50px;
+}
+
+.hero-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-banner .video-overlay {
+    position: absolute;
+    top: 300x;
+    left: 250px;
+    width: 75%;
+    height: 40%;
+    background: rgba(0, 0, 0, 0.363);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.hero-banner .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-banner h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    color: #bde1f0; 
+}
+
+.hero-banner .hook {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: #f0f0f0; 
+}
+
+.hero-banner .description {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: white;
+}
+
+.hero-banner .btn-register {
+    background-color: #7190f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.hero-banner .btn-register:hover {
+    background-color: #002ec4;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #000000;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 3em;
+    color: #020202;
+    margin-bottom: 15px;
+}
+
+.card-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-list li {
+    margin: 10px 0;
+}
+
+.card-list li .old-price {
+    text-decoration: line-through;
+    color: #2f00ff;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.card-list li .new-price {
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.total-value {
+    font-size: 1.5em;
+    color: red;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+
+.total-value .old-price {
+    text-decoration: line-through;
+}
+
+.discounted-value {
+    font-size: 1.5em;
+    color: #002ec4;
+    margin: 10px 0 20px 0;
+    font-weight: bolder;
+}
+
+.new-discount {
+    font-weight: bold;
+}
+
+.btn-register {
+    background-color: #7190f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.btn-register:hover {
+    background-color: #002ec4;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.card-info {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    padding: 20px;
+    flex: 1;
+}
+
+.left-column {
+    text-align: left;
+    flex: 2; 
+}
+
+.left-column h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.info-detail {
+    margin-bottom: 20px;
+}
+
+.info-detail h3 {
+    color: #002ec4;
+    margin-bottom: 10px;
+}
+
+.info-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-detail ul li {
+    margin: 5px 0;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 3; 
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    position: absolute;
+    left: -0.5%;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn-register {
+    background-color: #7190f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.btn-register:hover {
+    background-color: #002ec4;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 60%;
+}
+
+.testimonial {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.testimonial img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.testimonial p {
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.testimonial .name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.testimonial .stars {
+    color: #225dff;
+    margin-top: 10px;
+}
+
+.btn-register {
+    background-color: #7190f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.btn-register:hover {
+    background-color: #002ec4;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.registration-form h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    width: 60%;
+    background-color: #001d52;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-image {
+    flex: 1;
+}
+
+.form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content label {
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+.form-content input,
+.form-content select,
+.form-content button {
+    padding: 10px;
+    margin: 5px 0 20px;
+    font-size: 1em;
+    width: 80%;
+}
+
+.form-content button {
+    background-color: #7190f3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-content button:hover {
+    background-color: #002ec4;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #002ec4; 
+}
+
+
+@media (max-width: 768px) {
+    .hero-banner h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-banner .hook {
+        font-size: 1.2em;
+    }
+
+    .hero-banner .description {
+        font-size: 1em;
+    }
+
+    .hero-banner .btn-register {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .benefits {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .columns-container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .testimonial img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial {
+        font-size: 16px;
+    }
+
+    .testimonial .name {
+        font-size: 1.2em;
+    }
+
+    .form-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    .form-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .form-content input, .form-content select, .form-content button {
+        width: 100%;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner h1 {
+        font-size: 2em;
+    }
+
+    .hero-banner .hook {
+        font-size: 1em;
+    }
+
+    .hero-banner .description {
+        font-size: 0.9em;
+    }
+
+    .hero-banner .btn-register {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .benefits {
+        padding: 15px 10px;
+    }
+
+    .testimonial img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial {
+        font-size: 14px;
+    }
+
+    .testimonial .name {
+        font-size: 1em;
+    }
+
+    .register-container {
+        padding: 10px;
+    }
+
+    .testimonials h2 {
+        font-size: 2em;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 2em;
+    }
+
+    .card-list {
+        font-size: 1em;
+    }
+
+    .card-list li {
+        margin: 5px 0;
+    }
+
+    .total-value, .discounted-value {
+        font-size: 1.2em;
+    }
+
+    .registration-form {
+        padding: 20px 10px;
+    }
+
+    .registration-form h2 {
+        font-size: 1.5em;
+    }
+
+    .form-content {
+        padding: 10px;
+    }
+
+    .form-content input, .form-content select, .form-content button {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+
+    .social-icon {
+        font-size: 1.2em;
+    }
+}
